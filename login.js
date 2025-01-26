@@ -3,7 +3,7 @@ document.querySelector('#register').addEventListener('click', function() {
     const name = document.querySelector('#registerName').value;
     const password = document.querySelector('#registerPassword').value;
     
-    fetch('https://weatherapp-frontend-dun.vercel.app/users/signup/', {
+    fetch('https://weatherapp-backend-delta-ten.vercel.app/users/signup/', {
         method: 'POST',
         headers: {'Content-Type': 'application/json'},
         body: JSON.stringify({email, name, password})
@@ -19,7 +19,7 @@ document.querySelector('#connection').addEventListener('click', function() {
     const email = document.querySelector('#registerEmail').value;
     const password = document.querySelector('#registerPassword').value;
     
-    fetch('http://weatherapp-frontend-dun.vercel.app/users/signin/', {
+    fetch('https://weatherapp-backend-delta-ten.vercel.app/users/signin/', {
         method: 'POST',
         headers: {'Content-Type': 'application/json'},
         body: JSON.stringify({email, password})
