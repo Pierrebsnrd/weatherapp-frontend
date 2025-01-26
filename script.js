@@ -1,4 +1,4 @@
-fetch('https://weatherapp-frontend-dun.vercel.app')
+fetch('https://weatherapp-frontend-dun.vercel.app/')
 	.then(response => response.json())
 	.then(data => {
 		if (data.weather) {
